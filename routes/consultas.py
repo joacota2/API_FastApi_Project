@@ -1,14 +1,7 @@
-from itertools import count
-from typing import OrderedDict
-from fastapi import APIRouter, Response, status
+from fastapi import APIRouter
 from config.db import conn
 from models.consultas import consulta1, consulta2, consulta3, consulta4
-from schemas.consultas import  Races, Circuits, Drivers, Results, Constructors, Consulta1, Consulta2, Consulta3, Consulta4
-from cryptography.fernet import Fernet
-from starlette.status import HTTP_204_NO_CONTENT
-import pandas as pd
-import numpy as np
-import json
+
 
 consulta = APIRouter()
 

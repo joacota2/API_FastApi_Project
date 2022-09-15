@@ -1,4 +1,3 @@
-from itertools import count
 from fastapi import APIRouter, Response, status
 from config.db import conn
 from models.user import users
